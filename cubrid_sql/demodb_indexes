@@ -1,0 +1,3 @@
+ALTER TABLE board_main ADD CONSTRAINT board_main_pk PRIMARY KEY (board_id);
+
+

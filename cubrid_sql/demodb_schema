@@ -1,0 +1,13 @@
+CREATE TABLE board_main(
+board_id character varying(255) NOT NULL,
+title character varying(300) NOT NULL,
+content clob,
+view_cnt integer DEFAULT 0,
+writer_id character varying(20),
+atch_file_id character varying(20),
+last_update timestamp DEFAULT null,
+deleted_yn character varying(1) DEFAULT 'N'
+) COLLATE iso88591_bin ;
+
+CREATE SERIAL event_no START WITH 20422 INCREMENT BY 1 MINVALUE 20422 MAXVALUE 10000000000000000000000000000000000000 NOCYCLE NOCACHE;
+CREATE SERIAL stadium_no START WITH 30141 INCREMENT BY 1 MINVALUE 30141 MAXVALUE 10000000000000000000000000000000000000 NOCYCLE NOCACHE;
